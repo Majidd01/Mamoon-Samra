@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===================================
   // CONFIGURATION - Change these values
   // ===================================
-  const WEDDING_DATE = new Date('2026-04-10T16:00:00');
+  const WEDDING_DATE = new Date('2026-04-10T09:30:00');
 
   // ===================================
   // BACKGROUND PARTICLES
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Fade out perfectly
         canvas.style.transition = 'opacity 0.6s ease';
         canvas.style.opacity = '0';
-        
+
         card.classList.add('revealed');
         revealedCount++;
         if (revealedCount === totalCards) {
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '#f5c6d0', '#f7d1d9', '#fce4ec', '#f8bbd0',
     '#e8b4b8', '#f0c0c8', '#fdd5e0', '#f9e0e6',
     '#c45b6e', '#d4778a', '#e89ca8', '#f2b5bf',
-    '#daa0a6', '#c9a84c', '#e8d5a3', '#ffffff', 
+    '#daa0a6', '#c9a84c', '#e8d5a3', '#ffffff',
     '#ffd700', '#ffeb3b', '#ffc107', '#fff8dc'
   ];
 
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const left = Math.random() * 100;
     const duration = Math.random() * 5 + 5; // 5 to 10 seconds falling
     const delay = isInitialBurst ? Math.random() * 2 : 0;
-    const drift = (Math.random() - 0.5) * 300; 
+    const drift = (Math.random() - 0.5) * 300;
     const rotation = Math.random() * 720 - 360;
     const color = petalColors[Math.floor(Math.random() * petalColors.length)];
 
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const totalPetals = 200;
     for (let i = 0; i < totalPetals; i++) {
-        createSinglePetal(container, true);
+      createSinglePetal(container, true);
     }
   }
 
